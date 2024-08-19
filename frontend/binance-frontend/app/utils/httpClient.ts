@@ -9,6 +9,7 @@ export async function getTicker(market: string): Promise<Ticker> {
     if (!ticker) {
         throw new Error(`No ticker found for ${market}`);
     }
+    
     return ticker;
 }
 const x = getTickers()
